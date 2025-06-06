@@ -91,6 +91,9 @@ body{
   font-weight: 700;
   font-size: 28px;
 }
+.navbar .active{
+  color: var(--primary-color);
+}
 
 
 
