@@ -354,6 +354,7 @@ li.swiper-slide{
 }
 .swiper-button-next i, .swiper-button-prev i {
   font-size: 16px;
+  color: #fff;
 }
 .swiper-button-prev, .swiper-button-next{
   position: absolute;
@@ -379,17 +380,23 @@ li.swiper-slide{
   .swiper-wrapper-area {
     display: block;
   }
-  .swiper-button-prev, .swiper-button-next{
-    top: 100%;   /* 放到 .swiper 下方  */
+  .swiper{
+    width: 100%;
+  }
+  .swiper-button{
     margin-top: 32px;
+    position: relative;
   }
-  .swiper-button-prev {
-    left: auto;
-    right: 68px;
+  .swiper-button-prev, .swiper-button-next{
+    position: static;
   }
-  .swiper-button-next {
-    right: 0px;
+  .swiper-button-prev{
+    margin-left: calc( 100% - 120px);
   }
+  .swiper-button-next{
+    margin-right: -12px;
+  }
+
 }
 
 
